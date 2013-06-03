@@ -1,0 +1,34 @@
+body {
+	background: #000000;
+	color: #E0E0E0;
+	
+}
+
+nav {
+	display:block;
+	font-size: 20px;
+	margin-right:20px;
+	text-align:center;
+	border:10px solid transparent;
+	border-image: url(button.png) 0 14 0 14 stretch;
+}
+
+.movieresults {
+	color:#E0E0E0;
+	font-family: Verdana;
+	font-size: 14px;
+	padding: 10px;
+	margin:10px;
+	clear:both;
+}
+
+.home {
+	text-align: center;
+	margin: 0 auto;
+/*	background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiLq53_kk35EdfjX2eIGMnsxRoQViu3PZmpL3IscAXyu7iPtSH');
+*/	background-repeat:no-repeat;
+/*	background-attachment:fixed;*/
+	background-position:center;
+	}
+	
+
