@@ -1,5 +1,7 @@
 
-<ul>
-	<li>You searched for <%= @symbol%> stock</li>
-	<li>The current price for this stock is <%= @high %></li>
+<ul style="font-size:18px">
+	<li>You searched for <%= @company%> stock</li>
+	<li>The current price for <%= @stock %> stock is <%= @high %></li>
 </ul>
+
+<img class="image" src="<%= @image_content %>" alt="picture of <%= @company %>"/>

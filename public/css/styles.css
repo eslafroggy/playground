@@ -1,0 +1,63 @@
+body {
+  background-image:url('http://demo.gavick.com/joomla16/feb2012/templates/gk_league_news/images/style1/bg_main.jpg');
+	color: #A4A4A4;
+	font-family: Verdana;
+	font-size: 18px;
+	padding:100px 10px 10px 10px;
+}
+
+nav {
+	display:block;
+	font-size: 20px;
+	margin-right:20px;
+	text-align:center;
+	border:10px solid transparent;
+	border-image: url(button.png) 0 14 0 14 stretch;
+}
+.navbar-inner {
+	-webkit-border-radius:0;
+	-moz-webkit-border-radius:0;
+	border-radius:0;
+}
+.movieresults {
+	color:#A4A4A4;
+	font-family: Verdana;
+	font-size: 14px;
+	padding: 10px;
+	margin:10px;
+	clear:both;
+}
+
+.image {
+	max-width:500px;
+	padding: 100px;
+}
+.home {
+	text-align: center;
+	text-shadow: black 0.1em 0.1em 0.2em
+	margin: 0 auto;
+  background-repeat:no-repeat;
+	background-position:center;
+	}
+
+.search {
+	font-size: 18px;
+	padding-left: 100px;
+}
+
+.container{
+  margin-top: 50px;
+	margin-left: 600px;
+	max-width:500px;
+}	
+
+.form-search{
+	float:left;
+}
+
+.playground{
+	margin-left: 350px;
+	opacity: 0.6;
+}
+	
+

@@ -1,11 +1,14 @@
 <br>
 <br>
 <ul class="movieresults">
-<li>The title of your movie is <%= @title %></li>
-<li>The director of your movie is <%= @director %></li>
-<li>Your movie came out in the year <%= @year%></li>
-<li>Here is a brief synpopsis of your movie: <%= @plot %> </li>
+<li>The title of your movie is: <strong><%= @title %></strong></li>
+<br>
+<li>The director of your movie is: <strong> <%= @director %></strong></li>
+<br>
+<li>Your movie came out in the year: <strong> <%= @year%></strong></li>
+<br>
+<li>Here is a brief synpopsis of your movie: <strong> <%= @plot %></strong></li>
 </ul>
 <br>
 <br>
-<img src= <%= @poster%>/>
+<img style="padding: 30px" src= <%= @poster%>/>

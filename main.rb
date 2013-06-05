@@ -23,7 +23,7 @@ get "/movies" do
 end
 end
 # put begin rescue blocks around the movie code
-get "/movieresults" do
+post "/movieresults" do
 
   @movie = params[:title]
   a = Movies.find_by_title(@movie)
@@ -40,24 +40,29 @@ get "/stocks" do
   erb :stocks
 end
 
-get "/stockresults" do
+post "/stockresults" do
   @symbol = params[:stock_sym]
   stock = StockQuote::Stock.quote(@symbol)
   @symbol = stock.symbol
   @high = stock.high
+  @company = stock.company
+  
+  suckr = ImageSuckr::GoogleSuckr.new
+  @image_content = suckr.get_image_url({"q" => "#{@company}"})
   erb :stockresults
 end
 
 get "/images" do
-  @image = params[:image_content]
+  # @image = params[:image_content]
   erb :images
 end
 
 
-get "/imageresults" do
+post "/imageresults" do
   @image = params[:image_content]
-  suckr = ImageSuckr::GoogleSuckr.new 
-  @image = suckr.get_image_content
+  suckr = ImageSuckr::GoogleSuckr.new
+  @image_content = suckr.get_image_url({"q" => params[:image]}) 
+  # @image = suckr.get_image_content
   erb :imageresults
 end
   
